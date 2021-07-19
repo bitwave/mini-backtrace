@@ -9,6 +9,10 @@ repository = "https://github.com/Amanieu/mini-backtrace"
 keywords = ["backtrace", "no_std", "dwarf"]
 categories = ["development-tools", "no-std", "embedded"]
 
+[features]
+# compile with -fPIC libunwind
+pic = []
+
 [dependencies]
 cty = "0.2.1"
 arrayvec = { version = "0.7.0", default-features = false }
